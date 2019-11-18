@@ -1,0 +1,38 @@
+img{
+    background-size: cover;
+    background-position: top center;    
+}
+pre{
+    text-align: center;
+}
+
+main{
+    background-color: black;
+}
+
+footer{
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+}
+
+.btn-torto{
+    border: black 2px solid;
+    border-radius: 22% 30% 26% 45%/37% 39% 31% 50%;/*trabalhando com as bordas*/
+    outline: none;
+    padding: 10px;
+    color: ivory;
+    background-color: rgb(68, 68, 68);
+}
+
+/*Quando colocar o mouse no botão vai mudar o
+estilo para o descrito abaixo*/
+.btn-torto:hover{
+    border: black 2px solid ;
+    background-color: azure;
+    color: rgb(19, 19, 19);
+}
+
+.dados{
+    height: 900px;
+}
