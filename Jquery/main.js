@@ -5,8 +5,8 @@ $(function () {
     var botaobuscar = $('.botaobuscar');
     var retorno = $('#retorno');
     var form = $('.form');
-    var botaobuscar1 = $ ('.botaobuscar1');
-    var botaobuscar2 = $ ('.botaobuscar2');
+    var repositorios = $ ('.repositorios');
+    var visitados = $ ('.visitados');
 
 
 
@@ -29,7 +29,7 @@ $(function () {
                 resultado += "<h3>Biografia:" + data.bio + "</h3>"
 
                 repositorio(resultado, inputusuario)
-                visitados(resultado, inputusuario) 
+                visitado(resultado, inputusuario) 
 
                 retorno.html(resultado);
             }).error(function () {
@@ -39,7 +39,7 @@ $(function () {
             });
         });
         function repositorio(resultado, inputusuario) {
-        botaobuscar1.on('click', function () {
+            repositorios.on('click', function () {
             $.ajax({
                 url: "https://api.github.com/users/" + inputusuario.val() + "/repos"
             }).done(function (data) {
@@ -59,8 +59,8 @@ $(function () {
     }
 
 
-    function visitados(resultado, inputusuario) {
-        botaobuscar2.on('click', function () {
+    function visitado(resultado, inputusuario) {
+        visitados.on('click', function () {
             $.ajax({
                 url: "https://api.github.com/users/" + inputusuario.val() + "/starred"
             }).done(function (data) {
