@@ -1,7 +1,3 @@
-img{
-    background-size: cover;
-    background-position: top center;    
-}
 pre{
     text-align: center;
 }
@@ -35,4 +31,24 @@ estilo para o descrito abaixo*/
 
 .dados{
     height: 900px;
+}
+
+#retorno{
+    background: black;
+    color: cornflowerblue;
+    border: none;
+}
+
+.form{
+    background-color: black;
+
+}
+
+.well{
+  
+    border:none;
+}
+
+label{
+    color: cornflowerblue;
 }
