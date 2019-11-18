@@ -9,6 +9,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/estilo.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
 </head>
@@ -16,20 +17,10 @@
 
 
 <body>
-    <header>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        Header
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
 
 
     <main>
+       
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -39,13 +30,13 @@
 
                             <div class="form-group">
 
-                                <label>Insira o nome do usuário</label>
-                                <input type="text" class="inputusuario form-control" placeholder="" required>
+                                <label>Insira o nick do usuário</label>
+                                <input type="text" class="inputusuario form-control" placeholder="Insira o nick do usuario" required>
                             </div>
-                            <button type="button" class="btn btn-primary btn-lg botaobuscar">Buscar </button>
-                            <button type="button" class="btn btn-primary btn-lg botaobuscar1">Repositorios </button>
-                            <button type="button" class="btn btn-primary btn-lg botaobuscar2">Repositorios mais visitados </button>
 
+                            <button type="submit" class="btn-torto botaobuscar">Buscar</button>
+                            <button type="submit" class="btn-torto repositorios">Repositorios</button>
+                            <button type="submit" class="btn-torto visitados">Mais visitados</button>
 
                         </form>
                     </div>
@@ -53,7 +44,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="dados">
             <div class="row">
                 <div class="col-xs-12">
                     <pre id="retorno"></pre>
@@ -62,21 +53,13 @@
         </div>
     </main>
 
-    <footer>
-        <nav class="navbar navbar-default navbar-fixed-bottom">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        Footer
-                    </a>
-                </div>
-            </div>
-        </nav>
+    <footer class="bg-secondary p-3">
+        <p class="text-light m-0 text-center">&copy; Copyright Ana Paula Ponzoni - 2019</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="Jquery/main.js"></script>
-    
+    <script src="JavaScript/main.js"></script>
+
 
 
 </body>
