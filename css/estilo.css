@@ -3,11 +3,11 @@ pre{
 }
 
 main{
-    background-color: black;
+    background-color: grey;
 }
 
 footer{
-    background-color: black;
+    background-color:grey;
     color: whitesmoke;
     width: 100%;
 }
@@ -34,21 +34,22 @@ estilo para o descrito abaixo*/
 }
 
 #retorno{
-    background: black;
-    color: cornflowerblue;
+    background:grey;
+    color: black;
     border: none;
 }
 
 .form{
-    background-color: black;
+    background-color: grey;
 
 }
 
 .well{
   
-    border:none;
+    border-radius: 4px;
 }
 
 label{
-    color: cornflowerblue;
+    color: black;
+    text-align: center;
 }
